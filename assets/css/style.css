@@ -1,0 +1,112 @@
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) ,url(https://assets.nflxext.com/ffe/siteui/vlv3/e89c9679-2f5f-491d-924c-c58924a8ee4b/8ec27a1d-02ce-4489-b320-a95106906f5d/IN-en-20221121-popsignuptwoweeks-perspective_alpha_website_medium.jpg); 
+}
+
+.logo{
+    width: 120px;
+    display: inline-block;
+}
+
+.logo img{
+    width : 100%;
+}
+
+#postscontainer .card{
+    height: 100%;
+}
+
+#postscontainer .title{
+    height: 33px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.moviecard{
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+}
+
+.moviecard img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.ratingSection{
+    position: absolute;
+    background-color: aquamarine;
+    bottom: 0;
+    left: 0;
+    right:0;
+    padding: 20px;
+}
+
+.overviewsection{
+    position: absolute;
+    background-color: aliceblue;
+    height: 70%;
+    width: 100%;
+    left: 0;
+    padding: 20px;
+    top: 30%;
+    opacity: 0;
+    width: 100%;
+}
+
+.moviecard:hover .overviewsection,
+.moviecard:focus .overviewsection,
+.moviecard:active .overviewsection{
+top:30%;
+opacity: 1;
+}
+
+.action{
+    position:absolute;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    bottom: 0;
+    right:0;
+}
+
+.backDrop{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.6);
+    top: 0;
+    left:0;
+    display: none;
+}
+
+.moviemodal{
+    position: fixed;
+    width: 60%;
+    left:20%;
+    top:10%;
+    display: none;
+    background-color: white;
+}
+
+.backDrop.active, .moviemodal.active{
+    display: block;
+}
+
+.closeModal{
+    cursor: pointer;
+}
+
+.loader{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top : 0;
+    left : 0;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
